@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "AFStatHatClient"
   s.version      = "0.0.1"
-  s.summary      = "AFHTTPClient subclass for StatHat"
+  s.summary      = "An AFHTTPClient subclass for reporting to StatHat."
   s.homepage     = "https://github.com/pj4533/AFStatHatClient"
 
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
