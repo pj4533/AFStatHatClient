@@ -1,0 +1,17 @@
+PODS:
+  - AFNetworking (1.2.1)
+  - AFStatHatClient (0.0.1):
+    - AFNetworking (~> 1.0)
+
+DEPENDENCIES:
+  - AFStatHatClient (from `../`)
+
+EXTERNAL SOURCES:
+  AFStatHatClient:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AFNetworking: 616da0028916ce296f5c3cef74e5552eb4e10e13
+  AFStatHatClient: c18375e37a6415675a56c996423d3d2cee0e63f1
+
+COCOAPODS: 0.19.1
