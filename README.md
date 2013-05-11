@@ -1,11 +1,27 @@
 # AFStatHatClient
 
-A AFHTTPClient for reporting to StatHat
+An AFHTTPClient subclass for reporting to StatHat!
 
 ## Instructions
 
-``` objective-c
+EZ posting of counts and values are supported.
 
+With returning success/failure blocks:
+
+``` objective-c
+AFStatHatClient* stathat = [[AFStatHatClient alloc] initWithEZKey:@"YOUR EZ KEY"];
+[stathat postEZStat:@"Example" withCount:@1 success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    NSLog(@"%@", responseObject);
+} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    NSLog(@"%@", error);
+}];
+```
+
+Or simply:
+
+``` objective-c
+AFStatHatClient* stathat = [[AFStatHatClient alloc] initWithEZKey:@"YOUR EZ KEY"];
+[stathat postEZStat:@"Example" withCount@1];
 ```
 
 ## Contact
