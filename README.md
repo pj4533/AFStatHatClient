@@ -4,6 +4,17 @@ An AFHTTPClient subclass for reporting to StatHat!
 
 ## Instructions
 
+#### Install
+Available on CocoaPods, simply add to your Podfile:
+
+```
+pod "AFStatHatClient"
+```
+
+then do a 'pod install'
+
+#### Code
+
 EZ posting of counts and values are supported.
 
 With returning success/failure blocks:
